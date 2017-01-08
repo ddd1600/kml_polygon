@@ -102,7 +102,7 @@ module KmlPolygon
   end
   
   def wkt(lng, lat, radius, sides, rotate=0)
-    coords = spoints(lng, lat, radius, sdies, rotate)
+    coords = spoints(lng, lat, radius, sides, rotate)
     "POLYGON ((" + coords.map{|tuple| tuple.join(" ")}.join(", ") + "))"
   end
 
